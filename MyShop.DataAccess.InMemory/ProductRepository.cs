@@ -61,7 +61,7 @@ namespace MyShop.DataAccess.InMemory
             }
         }
 
-        public IQueryable<Product> Colection()
+        public IQueryable<Product> Collection()
         {
             return products.AsQueryable();
         }
