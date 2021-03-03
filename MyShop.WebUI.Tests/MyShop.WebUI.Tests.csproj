@@ -89,8 +89,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BasketControllerTests.cs" />
+    <Compile Include="Mocks\MockContext.cs" />
+    <Compile Include="Mocks\MockHttpContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="Controllers\HomeControllerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -99,6 +102,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MyShop.Core\MyShop.Core.csproj">
+      <Project>{114651ec-4ffe-40c5-8ce5-d2e9c0a5a06c}</Project>
+      <Name>MyShop.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyShop.Services\MyShop.Services.csproj">
+      <Project>{857ada05-6960-459e-a58c-09d89456203f}</Project>
+      <Name>MyShop.Services</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MyShop.WebUI\MyShop.WebUI.csproj">
       <Project>{FFABD070-9067-47FC-895A-CE2E05B6B5F9}</Project>
       <Name>MyShop.WebUI</Name>
